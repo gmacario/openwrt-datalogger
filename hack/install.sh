@@ -13,8 +13,9 @@ die() {
 }
 
 # opkg update
-# opkg install git nmap wireless-tools
+# opkg install git-http nmap wireless-tools
 
+which curl >/dev/null || die "Please install curl"
 which git >/dev/null || die "Please install git"
 which nmap >/dev/null || die "Please install nmap"
 which iwconfig >/dev/null || die "Please install wireless-tools"
