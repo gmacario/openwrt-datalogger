@@ -21,7 +21,7 @@ which nmap >/dev/null || die "Please install nmap"
 which iwconfig >/dev/null || die "Please install wireless-tools"
 
 if [ ! -e ${WORKDIR} ]; then
-    echo "INFO: Checking out ${DATALOGGER_URL} into ${WORKDIR}"
+    echo "INFO: Checking out ${DATALOGGER_URL}"
     git clone -b ${DATALOGGER_BRANCH} ${DATALOGGER_URL} ${WORKDIR}
 else
     echo "INFO: Updating ${WORKDIR}"
