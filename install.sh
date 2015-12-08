@@ -1,10 +1,18 @@
 #!/bin/sh
 
-set -x
+#set -x
 set -e
 
-opkg update
+die() {
+    echo "ERROR: $*"
+    exit 1
+}
 
-opkg install git nmap wireless-tools
+# opkg update
+# opkg install git nmap wireless-tools
 
-# EOF 
+which git2 || die "Please install git"
+which nmap || die "Please install nmap"
+which iwconfig || die "Please install wireless-tools"
+
+# EOF
