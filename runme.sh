@@ -13,9 +13,11 @@ echo "DEBUG: LOCALNET=${LOCALNET}"
 echo "DEBUG: LOGFILE=${LOGFILE}"
 
 echo "---------------------------------------------------------------" >>${LOGFILE}
-NOW=$(date +%Y%m%d-%H%M)
-echo "DEBUG: NOW=${NOW}" >>${LOGFILE}
+echo "DEBUG: date: $(date)" >>${LOGFILE}
+echo "" >>${LOGFILE}
 iwlist $IFACE scan >>${LOGFILE}
-nmap ${LOCALNET}
+nmap ${LOCALNET} >>${LOGFILE}
+
+echo "DEBUG: Logfile saved to ${LOGFILE}"
 
 # EOF
