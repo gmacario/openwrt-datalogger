@@ -6,7 +6,7 @@ Introduction
 
 This project realizes a simple Wi-Fi datalogger.
 
-This project has been tested on the MWLG2 running OpenWrt 15.09 (Chaos Chalmer).
+This project has been tested on the [Kingston MWLG2](http://www.kingston.com/it/wireless/wireless_readers) running [OpenWrt](http://www.openwrt.org/) 15.05 (Chaos Chalmer).
 
 
 Installing openwrt-datalogger
